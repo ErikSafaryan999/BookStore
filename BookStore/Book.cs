@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -18,9 +19,9 @@ namespace BookStore
 
         public int ID { get; set; }
 
-        public string? BookName;
+        private string? BookName;
 
-        public string bookname
+        public string? bookname
         {
             get { return BookName; }
             set
@@ -32,8 +33,8 @@ namespace BookStore
                 }
             }
         }
-
-        public int? PublicationYear
+        private int? PublicationYear;
+        public int? publicationyear
         {
             get { return PublicationYear; }
 
@@ -46,8 +47,8 @@ namespace BookStore
                 }
             }
         }
-
-        public int? Autor
+        private int? Autor;
+        public int? autor
         {
             get { return PublicationYear; }
 
